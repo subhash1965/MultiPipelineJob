@@ -1,11 +1,11 @@
 node('built-in') 
 {
-	stage('Continues Download') 
+	stage('ContinuesDownload_master') 
 	{
     	git branch: 'main', url: 'https://github.com/subhash1965/java-demo'
   	}
 
-    stage('Continues Build') 
+    stage('ContinuesBuild_master') 
     {
         sh 'mvn package'
     }
